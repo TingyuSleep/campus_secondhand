@@ -1,0 +1,15 @@
+# 忽略Go的临时文件
+*.log
+*.tmp
+*.swp
+*.bak
+*.idea/
+.vscode/
+
+# 忽略编译生成的二进制文件
+/bin/
+/obj/
+
+# 忽略数据库文件
+*.sqlite
+*.db
