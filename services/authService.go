@@ -11,7 +11,7 @@ func RegisterUser(username, password string) error {
 	var count int64
 	database.DB.Model(&models.User{}).Where("username = ?", username).Count(&count)
 	if count > 0 {
-		return errors.New("用户名已存在")
+		return errors.New("用户名已存在") //return会导致函数执行结束
 	}
 
 	user := models.User{Username: username, Password: password}
